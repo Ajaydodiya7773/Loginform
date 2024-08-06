@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#f0f0f0;
+}
+.log-container{
+    background-color:rgb(162, 148, 176);
+    border-radius: 8px;
+    box-shadow:0 0 19px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+}
+.form h2{
+    margin-bottom: 20px;
+    font-size:24px;
+    color: #333;
+    text-align: center;
+}
+.form label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color:#555;
+}
+.form input[type="text"],
+.form input[type="Email"],
+.form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    
+}
