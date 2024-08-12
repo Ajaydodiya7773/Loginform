@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
 </head>
 <body>
-    <div class="log-container">
-    <form class="form">
-        <h2> Login</h2>
-         <label for="username">Username:</label>
-        <input type="text" placeholder="Full Name" required> <br>
-        <label for="number">Mobile Number:</label>
-        <input type="text" id="mobileNumber" name="mobileNumber" pattern="\d{10}" maxlength="12" placeholder="Enter Number" required> <br>
-        <label for="Email">Email:</label>
-        <input type="email" placeholder="Email" id="Email" required> <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="pass" placeholder="Password?" required>
-    
-        <div class="checkbox">
-            <input type="checkbox" id="showPassword">
-            <label for="showPassword">Show Password</label>
+    <form action="" class="my-form">
+        <div class="login-row">
+            <a href="#" title="Logo">
+                <img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg?size=626&ext=jpg" alt="Logo">
+            </a>
+            <h1>You must sign in to join </h1>
         </div>
-        
-        <button type="submit">Login</button>
-             
-    </form>
+        <div class="social-row">
+            <a href="#" title="Use Google">
+                <img src="https://t4.ftcdn.net/jpg/03/08/54/37/240_F_308543787_DmPo1IELtKY9hG8E8GlW8KHEsRC7JiDN.jpg" alt="google">
+                Sign in with Google
+            </a>
+        </div>
+        <div class="lines">
+            <div class="line"></div>
+            OR
+            <div class="line"></div>
+
+        </div>
+        <div class="text-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            autocomplete="off" placeholder="you@example.com" required>
+            <div class="error-msg">Email is incorrect format</div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" maxlength="16" required autocomplete="new-password">
+        </div>
+<button type="submit" class="my-form_btn" >Login</button>
+<div class="my-form-ac">
+    <div class="my-form_row">
+        <span>Don't have an account?</span>
+        <a href="#" title="Create Account">
+            Sign Up
+        </a>
+    </div>
 </div>
+    </form>
 </body>
 </html>
